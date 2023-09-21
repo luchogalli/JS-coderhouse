@@ -1,8 +1,8 @@
 // App.js
 
 import React from 'react';
-import Navbar from '../NavBar.jsx';
-import ItemListContainer from '../ItemListContainer.jsx';
+import Navbar from './assets/components/NavBar.jsx';
+import ItemListContainer from './assets/components/ItemListContainer.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
