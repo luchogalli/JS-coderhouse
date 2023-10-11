@@ -1,6 +1,7 @@
 import React from 'react';
 import CartWidget from './CartWidget';
-
+import './NavBar.css';
+import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -12,10 +13,13 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto justify-content-center"> {/* Center menu items */}
             <li className="nav-item">
-              <a className="nav-link" href="#">Inicio</a>
+            <Link to ={'/Home'}><a className="nav-link">Inicio</a></Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Productos</a>
+            <Link to ={'/Contacto'}><a className="nav-link">Contact Us</a></Link>
+            </li>
+            <li className="nav-item">
+            <Link to ={'/Catalogo'}><a className="nav-link" href="catalogo">Productos</a></Link>
             </li>
             <li className="nav-item">
               <CartWidget />
