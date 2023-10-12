@@ -1,25 +1,25 @@
-
 import React from 'react';
 import Navbar from './assets/components/NavBar.jsx';
 import ItemListContainer from './assets/components/ItemListContainer.jsx';
 import Catalog from './assets/components/Catalogo.jsx';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { products } from './assets/components/Productos.jsx';
+import ProductDetail from './assets/components/ProductDetail.jsx';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-      <Navbar />
-      
+        <Navbar />
         <Routes>
-          <Route path="/Home" element={<ItemListContainer greeting="¡Bienvenido a nuestra tienda en línea!" />}></Route>
-          <Route path="/Catalogo" element={<Catalog products={products}></Catalog>}></Route>
+          <Route path="/Home" element={<ItemListContainer greeting="¡Bienvenido a nuestra tienda en línea!" />} />
+          <Route path="/Catalogo" element={<Catalog products={products} />} />
+          {/* Ruta para el detalle de producto */}
+          <Route path="/Catalogo/:id" element={<ProductDetail products={products} />} />
         </Routes>
       </div>
     </BrowserRouter>
-
   );
 }
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Catalogo.css'; // Importa el archivo CSS
-
+import './Catalogo.css'; 
 const Catalog = ({ products }) => {
   return (
     <div className="catalog-container">
