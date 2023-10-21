@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './assets/components/NavBar.jsx';
 import ItemListContainer from './assets/components/ItemListContainer.jsx';
 import Catalog from './assets/components/Catalogo.jsx';
-import Contacto from './assets/components/contacto.jsx'; // Importa el componente de Contacto
+import Contacto from './assets/components/contacto.jsx'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { products } from './assets/components/Productos.jsx';
