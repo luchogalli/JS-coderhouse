@@ -1,4 +1,53 @@
-.navbar-brand{
-    color: chocolate;
-    font-weight: bold;
-}
+.navbar {
+    background-color: #0074f0;
+    margin-left: 400px;
+    margin-right: 400px;
+    
+  }
+  
+  .navbar-brand {
+    color: rgb(102, 100, 100);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .navbar-toggler-icon {
+    color: white;
+  }
+  
+  /* Estilos para los enlaces de navegación */
+  .nav-item {
+    color: rgb(0, 47, 255);
+    font-size: 26px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-right: 20px;
+    text-decoration: none;
+    display: flex; /* Usar flexbox para centrar los elementos */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    height: 100%;
+    margin-left: 80px;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos para el carrito de compras (si es necesario) */
+  .cart-widget {
+    color: rgb(59, 57, 57);
+    font-size: 24px;
+    display: flex; /* Usar flexbox para centrar el carrito de compras */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    margin-left: 80px;
+    margin-top: 10PX;
+
+  }
+  
+  /* Estilos para el botón de navegación (si es necesario) */
+  .navbar-toggler {
+    border: none;
+  }
