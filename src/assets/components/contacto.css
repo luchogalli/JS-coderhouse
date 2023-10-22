@@ -1,7 +1,12 @@
 .contact-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 60px;
   }
   
 
@@ -35,7 +40,7 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #3d3c3c;
     border-radius: 5px;
     font-size: 16px;
   }

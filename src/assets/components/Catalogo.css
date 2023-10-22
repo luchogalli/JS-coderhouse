@@ -1,32 +1,43 @@
-
-/* Estilos para el contenedor principal del catálogo */
 .catalog-container {
-    max-width: 800px;
-    margin: 0 10px;
-    padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
 
-  }
+
+.catalog-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
   
-  /* Estilos para la lista de productos */
-  .product-list {
-    list-style: none;
-    padding: 0;
-    padding-top: 40px;
-  }
-  
-  .product-list li {
-    margin-bottom: 50px;
-  }
-  
-  /* Estilos para los enlaces de productos */
-  .product-link {
-    text-decoration: none;
-    color: #ff9100;
-    font-weight: bold;
-    font-size: 30px;
-    transition: color 0.5s;
-  }
-  
-  .product-link:hover {
-    color: #007bff;
-  }
+}
+
+/* Clase para la lista de productos */
+.product-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Clase para los elementos de la lista de productos */
+.product-list li {
+  margin: 10px 0;
+}
+
+/* Clase para los enlaces de productos */
+.product-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+/* Cambia el color del enlace cuando se pasa el mouse por encima */
+.product-link:hover {
+  color: #0056b3;
+}

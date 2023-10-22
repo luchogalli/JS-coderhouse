@@ -8,7 +8,7 @@ const ProductDetail = ({ products }) => {
   const product = products.find((p) => p.id === parseInt(id, 10));
   
   const GoBack = () => {
-    navigate('/Catalogo')
+    navigate('/Catalogo');
   }
 
   if (!product) {
@@ -16,12 +16,12 @@ const ProductDetail = ({ products }) => {
   }
 
   return (
-    <div>
-      <h2>Detalle del Producto</h2>
-      <h3>{product.name}</h3>
-      <img src={product.image} alt={product.name} />
-      <p>{product.description}</p>
-      <button onClick={GoBack}>Go Back</button>
+    <div className="product-detail-container">
+      <h2 className="product-title">Detalle del Producto</h2>
+      <h3 className="product-name">{product.name}</h3>
+      <img className="product-image" src={product.image} alt={product.name} />
+      <p className="product-description">{product.description}</p>
+      <button className="go-back-button" onClick={GoBack}>Go Back</button>
     </div>
   );
 };
