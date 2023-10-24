@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { products } from './assets/components/Productos.jsx';
 import ProductDetail from './assets/components/ProductDetail.jsx';
-import Home from '../src/assets/components/home..jsx'; // Importa el componente Home
+import Home from '../src/assets/components/home..jsx'; 
 import './App.css';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/Home" element={<Home />} /> {/* Agrega la ruta para la página de inicio */}
+          <Route path="/" element={<Home />} />
           <Route path="/Catalogo" element={<Catalog products={products} />} />
           <Route path="/Catalogo/:id" element={<ProductDetail products={products} />} />
           <Route path="/contacto" element={<Contacto />} />
@@ -24,5 +24,6 @@ function App() {
     </BrowserRouter>
   );
 }
+
 
 export default App;

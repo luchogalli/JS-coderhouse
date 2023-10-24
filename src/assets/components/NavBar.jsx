@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto justify-content-center">
             <li className="nav-item">
-            <Link to ={'/Home'}><a className="nav-link">Inicio</a></Link>
+            <Link to ={'/'}><a className="nav-link">Inicio</a></Link>
             </li>
             <li className="nav-item">
             <Link to ={'/Contacto'}><a className="nav-link">Contact Us</a></Link>
