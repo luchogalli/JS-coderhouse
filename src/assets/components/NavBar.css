@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #0074f0;
+    background-color: #f00800;
     margin-left: 400px;
     margin-right: 400px;
     
@@ -16,7 +16,6 @@
     color: white;
   }
   
-  /* Estilos para los enlaces de navegación */
   .nav-item {
     color: rgb(0, 47, 255);
     font-size: 26px;
@@ -24,9 +23,9 @@
     text-transform: uppercase;
     margin-right: 20px;
     text-decoration: none;
-    display: flex; /* Usar flexbox para centrar los elementos */
-    align-items: center; /* Centrar verticalmente */
-    justify-content: center; /* Centrar horizontalmente */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
     height: 100%;
     margin-left: 80px;
   }
@@ -35,19 +34,19 @@
     text-decoration: underline;
   }
   
-  /* Estilos para el carrito de compras (si es necesario) */
+ 
   .cart-widget {
     color: rgb(59, 57, 57);
     font-size: 24px;
-    display: flex; /* Usar flexbox para centrar el carrito de compras */
-    align-items: center; /* Centrar verticalmente */
-    justify-content: center; /* Centrar horizontalmente */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
     margin-left: 80px;
     margin-top: 10PX;
 
   }
   
-  /* Estilos para el botón de navegación (si es necesario) */
+
   .navbar-toggler {
     border: none;
   }
