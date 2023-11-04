@@ -12,8 +12,7 @@ const ProductDetail = ({ products }) => {
   }
 
   const handleBuyClick = () => {
-    // Aquí puedes agregar la lógica para procesar la compra del producto
-    // Por ejemplo, redirigir a una página de compra o mostrar un mensaje de éxito.
+    setCartCount(cartCount + 1)
   }
 
   if (!product) {
