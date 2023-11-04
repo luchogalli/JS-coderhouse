@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Catalogo.css'; 
+import './Catalogo.css';
 
 const Catalog = ({ products }) => {
   return (
