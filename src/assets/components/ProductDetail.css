@@ -62,3 +62,25 @@
   .buy-button:hover {
     background-color: #06b300;
   }
+  .success-message {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    text-align: center; 
+    font-size: 26px; 
+    z-index: 1000; 
+    animation: fadeOut 5s ease; 
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
