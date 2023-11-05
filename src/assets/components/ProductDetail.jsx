@@ -15,11 +15,11 @@ const ProductDetail = ({ products }) => {
   }
 
   const handleBuyClick = () => {
-    // Simulate a purchase action
+
     setShowSuccessMessage(true);
     setCartCount(cartCount + 1);
 
-    // Reset the success message after 5 seconds
+
     setTimeout(() => {
       setShowSuccessMessage(false);
     }, 5000);
