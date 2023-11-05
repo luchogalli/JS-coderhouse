@@ -14,13 +14,13 @@ export const products = [
   {
     id: 3,
     name: "BMW X3",
-    description: "Descripción detallada del Producto 2",
+    description: "Descripción detallada del Producto 3",
     image: "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYfvKIl10tLhu1XzWVo7puMLWFmdkAj5DOPEtEKZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snpq6v6ODubLz2aKqfUK8jmB2fJj5DOP5Eagd%25kcWExHWpbl8FO2k3Hy2o242z%25TQBrXpF72ZlZ24riI1gRscpF4HvVCt0KiIFJGbP5ABHvIT91leO2JGvloRfigpT9GsLxnKUilo90yG1abHsLoAC16ShJ0yLOEV%25GqTACygNzWBmlOECUkeaX7sgNEbnCBr10UkNh5u6SVAbnkq8NTxzOh5nmPecxagd56reMnTNIu8dtE6Cgk1F7GquAw",
   },
   {
     id: 4,
     name: "BMW X6",
-    description: "Descripción detallada del Producto 2",
+    description: "Descripción detallada del Producto 4",
     image: "https://www.bmw.com.ar/content/dam/bmw/common/all-models/x-series/x6/2014/model-card/BMW-X6_ModelCard.png",
   },
 ];

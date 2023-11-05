@@ -5,7 +5,7 @@ import './CartWidget.css';
 
 const CartWidget = ({ cartCount, setCartCount }) => {
   const handleCartClick = () => {
-    // Increment the cart count
+
     setCartCount(cartCount + 1);
   };
 
