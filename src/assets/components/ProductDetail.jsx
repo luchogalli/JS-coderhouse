@@ -2,12 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './ProductDetail.css';
 
-const ProductDetail = ({ products }) => {
+const ProductDetail = ({ products, addItem }) => {
   const { id } = useParams();
   const navigate = useNavigate();
   const product = products.find((p) => p.id === parseInt(id, 10));
 
-  const [cartCount, setCartCount] = useState(0);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
   const GoBack = () => {
@@ -15,9 +14,8 @@ const ProductDetail = ({ products }) => {
   }
 
   const handleBuyClick = () => {
-
+    addItem();
     setShowSuccessMessage(true);
-    setCartCount(cartCount + 1);
 
 
     setTimeout(() => {
@@ -40,7 +38,6 @@ const ProductDetail = ({ products }) => {
         <button className="buy-button" onClick={handleBuyClick}>Comprar</button>
       </div>
       {showSuccessMessage && <div className="success-message">Success</div>}
-      <div className="cart-count">Carrito: {cartCount}</div>
     </div>
   );
 };

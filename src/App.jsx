@@ -12,6 +12,10 @@ import './App.css';
 function App() {
   const [cartCount, setCartCount] = useState(0);
 
+  const additem=()=>{ 
+    setCartCount(cartCount+1);
+  }
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -24,8 +28,7 @@ function App() {
             element={
               <ProductDetail
                 products={products}
-                cartCount={cartCount}
-                setCartCount={setCartCount}
+                addItem={additem}
               />
             }
           />

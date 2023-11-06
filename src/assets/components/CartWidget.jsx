@@ -3,14 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import './CartWidget.css';
 
-const CartWidget = ({ cartCount, setCartCount }) => {
-  const handleCartClick = () => {
+const CartWidget = ({ cartCount}) => {
 
-    setCartCount(cartCount + 1);
-  };
 
   return (
-    <div className="cart-widget" onClick={handleCartClick}>
+    <div className="cart-widget" >
       <FontAwesomeIcon icon={faShoppingCart} className="cart-icon" />
       <span className="badge badge-custom">{cartCount}</span>
     </div>
