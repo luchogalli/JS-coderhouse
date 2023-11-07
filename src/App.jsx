@@ -7,14 +7,23 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { products } from './assets/components/Productos.jsx';
 import ProductDetail from './assets/components/ProductDetail.jsx';
 import Home from './assets/components/home..jsx'; 
+import CheckoutPage from './assets/components/checkout.jsx'
 import './App.css';
 
 function App() {
   const [cartCount, setCartCount] = useState(0);
+  const [selectedItems, setselectedItems] = useState([]);
+  
+  const additem = (id) => {
+    console.log(id);
 
-  const additem=()=>{ 
-    setCartCount(cartCount+1);
-  }
+ 
+    const newselecteditem=[...selectedItems,id];
+    setselectedItems(newselecteditem);
+
+    console.log(selectedItems);
+    setCartCount(cartCount + 1);
+  };
 
   return (
     <BrowserRouter>
@@ -33,6 +42,8 @@ function App() {
             }
           />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/checkout" element={<CheckoutPage poductsToBuy={selectedItems}/>} />
+          
         </Routes>
       </div>
     </BrowserRouter>

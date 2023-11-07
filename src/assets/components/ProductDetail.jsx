@@ -13,8 +13,8 @@ const ProductDetail = ({ products, addItem }) => {
     navigate('/Catalogo');
   }
 
-  const handleBuyClick = () => {
-    addItem();
+  const handleBuyClick = (id) => {
+    addItem(id);
     setShowSuccessMessage(true);
 
 
@@ -35,7 +35,7 @@ const ProductDetail = ({ products, addItem }) => {
       <p className="product-description">{product.description}</p>
       <div className="button-container">
         <button className="go-back-button" onClick={GoBack}>Go Back</button>
-        <button className="buy-button" onClick={handleBuyClick}>Comprar</button>
+        <button className="buy-button" onClick={()=>handleBuyClick(product.id)}>Comprar</button>
       </div>
       {showSuccessMessage && <div className="success-message">Success</div>}
     </div>
