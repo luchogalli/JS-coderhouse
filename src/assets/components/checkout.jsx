@@ -3,7 +3,7 @@ import './checkout.css';
 import { products } from './Productos';
 
 const CheckoutPage = ({ poductsToBuy }) => {
-  // Calculate the count of selected items
+
   const serviceCount = poductsToBuy.reduce((acc, serviceId) => {
     acc[serviceId] = (acc[serviceId] || 0) + 1;
     return acc;
@@ -34,14 +34,43 @@ const CheckoutPage = ({ poductsToBuy }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Order placed:', userInformation);
+
+  
+    const alertContainer = document.createElement('div');
+    alertContainer.className = 'alert-container';
+
+    
+    const alertTitle = document.createElement('h2');
+    alertTitle.className = 'alert-title';
+    alertTitle.textContent = 'Gracias por su compra';
+
+    
+    const alertMessage = document.createElement('p');
+    alertMessage.className = 'alert-message';
+    alertMessage.textContent = 'Un representante se pondra en contacto.';
+
+    
+    const closeButton = document.createElement('button');
+    closeButton.className = 'alert-button';
+    closeButton.textContent = 'OK';
+    closeButton.addEventListener('click', () => {
+      alertContainer.remove();
+      window.location.href = '/';
+    });
+
+    alertContainer.appendChild(alertTitle);
+    alertContainer.appendChild(alertMessage);
+    alertContainer.appendChild(closeButton);
+
+    
+    document.body.appendChild(alertContainer);
   };
 
   return (
     <div className="checkout-container">
       <h2>Checkout</h2>
       <div className="cart-summary">
-        {/* Display a summary of items in the cart */}
+        {}
         <h3>Cart Summary</h3>
         <ul>
           {Object.entries(serviceCount).map(([serviceId, count]) => {
@@ -55,7 +84,7 @@ const CheckoutPage = ({ poductsToBuy }) => {
                 </li>
               );
             }
-            return null; // Handle the case where a product is not found
+            return null; 
           })}
         </ul>
         <p>Total Cost: ${totalCost}</p>
@@ -101,7 +130,7 @@ const CheckoutPage = ({ poductsToBuy }) => {
           >
             <option value="credit-card">Credit Card</option>
             <option value="paypal">PayPal</option>
-            {/* Add more payment methods as needed */}
+            {}
           </select>
         </div>
         <button type="submit">Place Order</button>

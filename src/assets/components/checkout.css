@@ -1,4 +1,4 @@
-/* checkout.css */
+
 .checkout-container {
     max-width: 600px;
     margin: 0 auto;
@@ -71,5 +71,43 @@
   }
   
   button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+.alert-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .alert-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .alert-message {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .alert-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .alert-button:hover {
     background-color: #0056b3;
   }
