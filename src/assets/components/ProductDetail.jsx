@@ -20,7 +20,7 @@ const ProductDetail = ({ products, addItem }) => {
 
     setTimeout(() => {
       setShowSuccessMessage(false);
-    }, 5000);
+    }, 2000);
   }
 
   if (!product) {
