@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { categorias }  from '../data/Categorias.js';
 import './Catalogo.css';
 
 const Categoria = ({ products }) => {
   return (
     <div className="catalog-container">
-      <h2>Catálogo de Productos</h2>
+      <h2>Categorias de Productos</h2>
       <ul className="product-list">
-        {products.map((product) => (
-          <li key={product.id} className="product-item">
-            <Link to={`/Catalogo/${product.id}`} className="product-link">
-              <img src={product.image} alt={product.name} className="product-image" />
-              <div className="product-name">{product.name}</div>
+        {categorias.map((categoria) => (
+          <li key={categoria.id} className="product-item">
+            <Link to={`/Categoria/${categoria.id}`} className="product-link">
+              <img src={categoria.image} alt={categoria.name} className="product-image" />
+              <div className="product-name">{categoria.name}</div>
             </Link>
           </li>
         ))}
