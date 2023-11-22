@@ -7,7 +7,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { products } from './assets/components/Productos.jsx';
 import ProductDetail from './assets/components/ProductDetail.jsx';
 import Home from './assets/components/home..jsx'; 
-import CheckoutPage from './assets/components/checkout.jsx'
+import CheckoutPage from './assets/components/checkout.jsx';
+import Categoria from './assets/components/Categoria.jsx';
 import './App.css';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Navbar cartCount={cartCount} />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/Categoria" element={<Categoria products={products}/>} />
           <Route path="/Catalogo" element={<Catalog products={products} />} />
           <Route
             path="/Catalogo/:id"

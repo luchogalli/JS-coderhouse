@@ -27,4 +27,34 @@ export const products = [
     image: "https://www.bmw.com.ar/content/dam/bmw/common/all-models/x-series/x6/2014/model-card/BMW-X6_ModelCard.png",
     price: 60000
   },
+  {
+    id: 5,
+    name: "BMW X6",
+    description: "Descripción detallada del Producto 4",
+    image: "https://www.bmw.com.ar/content/dam/bmw/common/all-models/x-series/x6/2014/model-card/BMW-X6_ModelCard.png",
+    price: 60000
+  },
+  {
+    id: 6,
+    name: "BMW X6",
+    description: "Descripción detallada del Producto 4",
+    image: "https://www.bmw.com.ar/content/dam/bmw/common/all-models/x-series/x6/2014/model-card/BMW-X6_ModelCard.png",
+    price: 60000
+  },
+  {
+    id: 7,
+    name: "BMW X6",
+    description: "Descripción detallada del Producto 4",
+    image: "https://www.bmw.com.ar/content/dam/bmw/common/all-models/x-series/x6/2014/model-card/BMW-X6_ModelCard.png",
+    price: 60000
+  },
+  {
+    id: 8,
+    name: "BMW X6",
+    description: "Descripción detallada del Producto 4",
+    image: "https://www.bmw.com.ar/content/dam/bmw/common/all-models/x-series/x6/2014/model-card/BMW-X6_ModelCard.png",
+    price: 60000
+  },
+
+
 ];

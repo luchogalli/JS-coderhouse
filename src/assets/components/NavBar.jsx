@@ -28,7 +28,7 @@ const Navbar = ({ cartCount }) => {
               <Link to={'/Contacto'}><a className="nav-link">Contact Us</a></Link>
             </li>
             <li className="nav-item">
-              <Link to={'/Catalogo'}><a className="nav-link" href="catalogo">Productos</a></Link>
+              <Link to={'/Categoria'}><a className="nav-link" href="Categoria">Productos</a></Link>
             </li>
             <li className="nav-item">
               <CartWidget cartCount={cartCount} />
