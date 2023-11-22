@@ -129,7 +129,8 @@ const CheckoutPage = ({ poductsToBuy }) => {
             onChange={handleUserInformationChange}
           >
             <option value="credit-card">Credit Card</option>
-            <option value="paypal">PayPal</option>
+            <option value="bank">Transferencia bancaria</option>
+            <option value="cheque">Cheque</option>
             {}
           </select>
         </div>
