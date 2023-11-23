@@ -10,7 +10,7 @@ const ProductDetail = ({ products, addItem }) => {
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
   const GoBack = () => {
-    navigate('/Catalogo');
+    navigate('/Categoria');
   }
 
   const handleBuyClick = (id) => {
