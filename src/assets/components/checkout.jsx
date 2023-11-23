@@ -47,7 +47,7 @@ const CheckoutPage = ({ poductsToBuy }) => {
     
     const alertMessage = document.createElement('p');
     alertMessage.className = 'alert-message';
-    alertMessage.textContent = 'Un representante se pondra en contacto.';
+    alertMessage.textContent = 'Nos pondremos en contacto para coordinar la entrega del vahiculo';
 
     
     const closeButton = document.createElement('button');
