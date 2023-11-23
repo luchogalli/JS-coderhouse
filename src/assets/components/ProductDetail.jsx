@@ -32,6 +32,7 @@ const ProductDetail = ({ products, addItem }) => {
       <h2 className="product-title">Detalle del Producto</h2>
       <h3 className="product-name">{product.name}</h3>
       <img className="product-image" src={product.image} alt={product.name} />
+      <div className="product-price">${product.price}</div> 
       <p className="product-description">{product.description}</p>
       <div className="button-container">
         <button className="go-back-button" onClick={GoBack}>Go Back</button>
