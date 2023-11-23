@@ -71,7 +71,7 @@ const CheckoutPage = ({ poductsToBuy }) => {
       <h2>Checkout</h2>
       <div className="cart-summary">
         {}
-        <h3>Cart Summary</h3>
+        <h3>Resumen</h3>
         <ul>
           {Object.entries(serviceCount).map(([serviceId, count]) => {
             const service = products.find(item => item.id === parseInt(serviceId));
@@ -79,7 +79,7 @@ const CheckoutPage = ({ poductsToBuy }) => {
               return (
                 <li key={serviceId}>
                   <p>{service.name} x{count}</p>
-                  <p>Price: ${service.price}</p>
+                  <p>Precio: ${service.price}</p>
                   <p>Total: ${service.price * count}</p>
                 </li>
               );
@@ -87,12 +87,12 @@ const CheckoutPage = ({ poductsToBuy }) => {
             return null; 
           })}
         </ul>
-        <p>Total Cost: ${totalCost}</p>
+        <p>Total: ${totalCost}</p>
       </div>
       <form onSubmit={handleSubmit}>
-        <h3>Shipping Information</h3>
+        <h3>Informacion del comprador</h3>
         <div className="form-group">
-          <label>Name:</label>
+          <label>Nombre:</label>
           <input
             type="text"
             name="name"
@@ -112,7 +112,7 @@ const CheckoutPage = ({ poductsToBuy }) => {
           />
         </div>
         <div className="form-group">
-          <label>Address:</label>
+          <label>Direccion:</label>
           <textarea
             name="address"
             value={userInformation.address}
@@ -120,21 +120,20 @@ const CheckoutPage = ({ poductsToBuy }) => {
             required
           />
         </div>
-        <h3>Payment Information</h3>
+        <h3>Informacion de pago</h3>
         <div className="form-group">
-          <label>Payment Method:</label>
+          <label>Forma:</label>
           <select
             name="paymentMethod"
             value={userInformation.paymentMethod}
             onChange={handleUserInformationChange}
           >
-            <option value="credit-card">Credit Card</option>
+            <option value="credit-card">Tarjeta de credito</option>
             <option value="bank">Transferencia bancaria</option>
-            <option value="cheque">Cheque</option>
             {}
           </select>
         </div>
-        <button type="submit">Place Order</button>
+        <button type="submit">Finalizar la compra</button>
       </form>
     </div>
   );
