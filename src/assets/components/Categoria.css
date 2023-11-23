@@ -1,0 +1,47 @@
+.catalog-container {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+  
+  
+  .catalog-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    
+  }
+  
+  
+  .product-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  
+  .product-list li {
+    margin: 10px 0;
+  }
+  
+  
+  .product-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  
+  .product-link:hover {
+    color: #0056b3;
+  }
+  .product-image {
+    width: 500px;  
+    height: auto;  
+}

@@ -32,28 +32,28 @@ export const products = [
     name: "BMW M3",
     description: "El BMW M3 es un automóvil deportivo de alto rendimiento que combina un diseño elegante y aerodinámico con una potencia robusta, ofreciendo una experiencia de conducción emocionante y precisa, característico de la reputación de ingeniería superior de BMW.",
     image: "https://cdn.motor1.com/images/mgl/0eegPm/s3/2023-bmw-m4-edition-50-jahre-bmw-m-exterior.jpg",
-    price: 60000
+    price: 45000
   },
   {
     id: 6,
     name: "BMW M5",
     description: "El BMW M5 es un sedán deportivo de lujo que combina una potencia formidable con un diseño sofisticado, proporcionando un alto rendimiento y una comodidad excepcional, lo que lo convierte en una opción destacada para quienes buscan un balance entre desempeño deportivo y funcionalidad cotidiana.",
     image: "https://cdn.motor1.com/images/mgl/NYnej/s1/lanzamiento-bmw-m5-xdrive-f90.jpg",
-    price: 60000
+    price: 70000
   },
   {
     id: 7,
     name: "BMW i3",
     description: "El BMW i3 es un compacto eléctrico innovador con un diseño distintivo y moderno, que ofrece una conducción ágil y eficiente, representando el compromiso de BMW con la movilidad sostenible y la incorporación de tecnologías avanzadas para una experiencia de conducción amigable con el medio ambiente.",
     image: "https://www.adslzone.net/app/uploads-adslzone.net/2021/09/bmw-i3-2019-ficha-tecnica.jpg",
-    price: 60000
+    price: 25000
   },
   {
     id: 8,
     name: "BMW i8",
     description: "El BMW i8 es un deportivo híbrido enchufable de vanguardia que fusiona un diseño futurista y aerodinámico con tecnología híbrida avanzada, proporcionando una combinación emocionante de rendimiento, eficiencia y estética elegante, simbolizando la visión de BMW hacia una movilidad deportiva y sostenible.",
     image: "https://cdn-img.automoto.it/images/21835150/3000x/bmw-i8-coupe-2020-16.jpeg",
-    price: 60000
+    price: 75000
   },
 
 

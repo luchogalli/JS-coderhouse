@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { categorias }  from '../data/Categorias.js';
-import './Catalogo.css';
+import './Categoria.css';
 
 const Categoria = ({ products }) => {
   return (

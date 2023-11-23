@@ -18,18 +18,18 @@
   
 }
 
-/* Clase para la lista de productos */
+
 .product-list {
   list-style: none;
   padding: 0;
 }
 
-/* Clase para los elementos de la lista de productos */
+
 .product-list li {
   margin: 10px 0;
 }
 
-/* Clase para los enlaces de productos */
+
 .product-link {
   text-decoration: none;
   color: #007bff;
@@ -37,7 +37,7 @@
   transition: color 0.3s;
 }
 
-/* Cambia el color del enlace cuando se pasa el mouse por encima */
+
 .product-link:hover {
   color: #0056b3;
 }
