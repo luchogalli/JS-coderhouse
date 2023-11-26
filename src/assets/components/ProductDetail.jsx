@@ -5,7 +5,7 @@ import './ProductDetail.css';
 const ProductDetail = ({ products, addItem }) => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const product = products.find((p) => p.id === parseInt(id, 10));
+  const product = products.find((p) => p.id === id);
 
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 

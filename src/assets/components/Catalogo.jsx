@@ -1,13 +1,19 @@
 import React from 'react';
 import './Catalogo.css';
-import { categorias }  from '../data/Categorias.js';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 
-const Catalog = ({ products }) => {
+const Catalog = ({ products, categories }) => {
   const { categoriaID  } = useParams();
   const navigate = useNavigate();
-  const selectedCategory = categorias.find(category => category.id === categoriaID );
-  const servicesToShow = products.filter(producto => selectedCategory.products.includes(producto.id));
+
+  const selectedCategory = categories.find(category => category.id === categoriaID );
+
+  const servicesToShow = products.filter(producto => {
+    console.log(selectedCategory.products);
+    return selectedCategory.products.includes(producto.id);
+  });
+
+  console.log("servicios a mostrar: " + servicesToShow);
   return (
     <div className="catalog-container">
       <h2>Catálogo de Productos</h2>
@@ -24,5 +30,6 @@ const Catalog = ({ products }) => {
     </div>
   );
 };
+
 
 export default Catalog;

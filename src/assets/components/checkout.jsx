@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './checkout.css';
-import { products } from './Productos';
 
-const CheckoutPage = ({ poductsToBuy }) => {
+
+const CheckoutPage = ({ poductsToBuy, products }) => {
 
   const serviceCount = poductsToBuy.reduce((acc, serviceId) => {
     acc[serviceId] = (acc[serviceId] || 0) + 1;
@@ -10,7 +10,7 @@ const CheckoutPage = ({ poductsToBuy }) => {
   }, {});
 
   const totalCost = Object.entries(serviceCount).reduce((total, [serviceId, count]) => {
-    const service = products.find(item => item.id === parseInt(serviceId));
+    const service = products.find(item => item.id === serviceId);
     if (service) {
       return total + (service.price * count);
     }
@@ -74,7 +74,7 @@ const CheckoutPage = ({ poductsToBuy }) => {
         <h3>Resumen</h3>
         <ul>
           {Object.entries(serviceCount).map(([serviceId, count]) => {
-            const service = products.find(item => item.id === parseInt(serviceId));
+            const service = products.find(item => item.id === serviceId);
             if (service) {
               return (
                 <li key={serviceId}>
