@@ -3,19 +3,21 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { categorias }  from '../data/Categorias.js';
 import './Categoria.css';
-import { doc, getDoc, getFirestore } from "firebase/firestore"
+import { doc, getDoc, getFirestore, collection, getDocs } from "firebase/firestore"
+
 const Categoria = ({ products }) => {
     useEffect(() => {
+      async function FetchCategories(){
         const db = getFirestore();
     
-        const biciRef = doc(db, "categorias", "X");
-        getDoc(biciRef).then(snapshot => {
-            if (snapshot.exists()) {
-                console.log(snapshot.data());
-             //   setProduct({ id: snapshot.id, ...snapshot.data() });
-            }
-        });
+        const coleccionFB = collection(db, "categorias");
+        const Docus = await getDocs (coleccionFB);
+        const listDocus = Docus.docs.map(doc => doc.data());
+        console.log(listDocus);
+      }
+      FetchCategories();
     }, []);
+
   return (
     <div className="catalog-container">
       <h2>Categorias de Productos</h2>
