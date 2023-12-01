@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import './checkout.css';
 
-
 const CheckoutPage = ({ poductsToBuy, products }) => {
-
   const serviceCount = poductsToBuy.reduce((acc, serviceId) => {
     acc[serviceId] = (acc[serviceId] || 0) + 1;
     return acc;
@@ -35,21 +33,17 @@ const CheckoutPage = ({ poductsToBuy, products }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-  
     const alertContainer = document.createElement('div');
     alertContainer.className = 'alert-container';
 
-    
     const alertTitle = document.createElement('h2');
     alertTitle.className = 'alert-title';
     alertTitle.textContent = 'Gracias por su compra';
 
-    
     const alertMessage = document.createElement('p');
     alertMessage.className = 'alert-message';
-    alertMessage.textContent = 'Nos pondremos en contacto para coordinar la entrega del vahiculo';
+    alertMessage.textContent = 'Nos pondremos en contacto para coordinar la entrega del vehículo';
 
-    
     const closeButton = document.createElement('button');
     closeButton.className = 'alert-button';
     closeButton.textContent = 'OK';
@@ -62,7 +56,6 @@ const CheckoutPage = ({ poductsToBuy, products }) => {
     alertContainer.appendChild(alertMessage);
     alertContainer.appendChild(closeButton);
 
-    
     document.body.appendChild(alertContainer);
   };
 
@@ -70,7 +63,6 @@ const CheckoutPage = ({ poductsToBuy, products }) => {
     <div className="checkout-container">
       <h2>Checkout</h2>
       <div className="cart-summary">
-        {}
         <h3>Resumen</h3>
         <ul>
           {Object.entries(serviceCount).map(([serviceId, count]) => {
@@ -78,13 +70,14 @@ const CheckoutPage = ({ poductsToBuy, products }) => {
             if (service) {
               return (
                 <li key={serviceId}>
-                  <p>{service.name} x{count}</p>
+                  <p>ID interno: {serviceId}</p> 
+                  <p>{service.name} x {count}</p>
                   <p>Precio: ${service.price}</p>
                   <p>Total: ${service.price * count}</p>
                 </li>
               );
             }
-            return null; 
+            return null;
           })}
         </ul>
         <p>Total: ${totalCost}</p>
@@ -112,7 +105,7 @@ const CheckoutPage = ({ poductsToBuy, products }) => {
           />
         </div>
         <div className="form-group">
-          <label>Direccion:</label>
+          <label>Dirección:</label>
           <textarea
             name="address"
             value={userInformation.address}
@@ -120,7 +113,7 @@ const CheckoutPage = ({ poductsToBuy, products }) => {
             required
           />
         </div>
-        <h3>Informacion de pago</h3>
+        <h3>Información de pago</h3>
         <div className="form-group">
           <label>Forma:</label>
           <select
@@ -128,9 +121,8 @@ const CheckoutPage = ({ poductsToBuy, products }) => {
             value={userInformation.paymentMethod}
             onChange={handleUserInformationChange}
           >
-            <option value="credit-card">Tarjeta de credito</option>
+            <option value="credit-card">Tarjeta de crédito</option>
             <option value="bank">Transferencia bancaria</option>
-            {}
           </select>
         </div>
         <button type="submit">Finalizar la compra</button>
